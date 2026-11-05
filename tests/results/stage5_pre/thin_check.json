@@ -1,0 +1,40 @@
+{
+ "tiers": {
+  "d10": {
+   "n": 84,
+   "full_median": 0.04816858878560919,
+   "thin_median": 0.05120962976511394,
+   "median_abs_cell_diff": 0.00165204050374349,
+   "max_abs_cell_diff": 0.025498405337606472
+  },
+  "t2": {
+   "n": 107,
+   "full_median": 0.05623606384060311,
+   "thin_median": 0.05850079573320421,
+   "median_abs_cell_diff": 0.0018811858547621158,
+   "max_abs_cell_diff": 0.04816009212011202
+  },
+  "t3": {
+   "n": 156,
+   "full_median": 0.056729586243233085,
+   "thin_median": 0.057794604907917796,
+   "median_abs_cell_diff": 0.0017506424491218336,
+   "max_abs_cell_diff": 0.010302665394363447
+  },
+  "t4": {
+   "n": 37,
+   "full_median": 0.05372698055824671,
+   "thin_median": 0.05424076882167835,
+   "median_abs_cell_diff": 0.001680224764545414,
+   "max_abs_cell_diff": 0.00915542185987328
+  },
+  "sp": {
+   "n": 102,
+   "full_median": 0.05272239692950813,
+   "thin_median": 0.054174538370221854,
+   "median_abs_cell_diff": 0.0017852327410706956,
+   "max_abs_cell_diff": 0.03223647967473986
+  }
+ },
+ "pass": false
+}

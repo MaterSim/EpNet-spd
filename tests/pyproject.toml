@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "epnet"
+version = "1.0.0"
+description = "EpNet: a learned empirical pseudopotential for electronic band structures across the s, p and d blocks"
+readme = "README.md"
+license = { text = "MIT" }
+authors = [{ name = "Qiang Zhu" }]
+requires-python = ">=3.9"
+dependencies = [
+  "numpy>=1.24",
+  "scipy>=1.10",
+  "torch>=2.0",
+  "e3nn>=0.4.4",
+  "spglib>=2.5",
+  "pymatgen>=2024.1",
+  "ase>=3.22",
+  "matplotlib>=3.7",
+]
+
+[project.optional-dependencies]
+app = ["gradio==4.44.1", "gradio_client==1.3.0", "huggingface_hub==0.24.5", "pydantic==2.10.6", "fastapi==0.128.8",
+       "starlette==0.49.3", "uvicorn==0.39.0", "websockets==12.0", "python-multipart==0.0.20", "plotly>=5.20"]
+data = ["mp-api>=0.41", "requests>=2.31"]
+test = ["pytest>=7"]
+
+[tool.setuptools.packages.find]
+include = ["epnet*"]
+
+[tool.setuptools.package-data]
+epnet = ["data/*.json", "data/atomic_channels/*.npz"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"
